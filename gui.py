@@ -286,7 +286,7 @@ class App:
         print(idx)
         if ((idx+1) == len(self.clrs)):
             print('made it')
-            idx=0
+            idx=-1
         # print(varname(self.clrs[idx]))
         self.clr = self.clrs[idx+1]
 
