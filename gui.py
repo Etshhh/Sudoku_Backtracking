@@ -26,20 +26,20 @@ class App:
     #     [0,5,8,0,0,0,0,6,0],
     #     [4,3,0,0,8,0,0,7,0]
     # ]
-    # grid = [
-    #     [7,8,0,4,0,0,1,2,0],
-    #     [6,0,0,0,7,5,0,0,9],
-    #     [0,0,0,6,0,1,0,7,8],
-    #     [0,0,7,0,4,0,2,6,0],
-    #     [0,0,1,0,5,0,9,3,0],
-    #     [9,0,4,0,6,0,0,0,5],
-    #     [0,7,0,3,0,0,0,1,2],
-    #     [1,2,0,0,0,7,4,0,0],
-    #     [0,4,9,2,0,6,0,0,7]
-    # ]
-    # grid = np.array(grid)
+    grid = [
+        [7,8,0,4,0,0,1,2,0],
+        [6,0,0,0,7,5,0,0,9],
+        [0,0,0,6,0,1,0,7,8],
+        [0,0,7,0,4,0,2,6,0],
+        [0,0,1,0,5,0,9,3,0],
+        [9,0,4,0,6,0,0,0,5],
+        [0,7,0,3,0,0,0,1,2],
+        [1,2,0,0,0,7,4,0,0],
+        [0,4,9,2,0,6,0,0,7]
+    ]
+    grid = np.array(grid)
     
-    grid = sudoku_ch.createagrid(1) # 0 -> 1, where 0 is easy and 1 is hard
+    # grid = sudoku_ch.createagrid(1) # 0 -> 1, where 0 is easy and 1 is hard
 
     ogrid = grid.copy()
     
@@ -117,6 +117,10 @@ class App:
     
 
     def init_images(self):
+        
+        amain = pygame.image.load('icons/main.jfif')
+        pygame.display.set_icon(amain)
+
         self.icon1_s=60
         self.icon1_coords=((self.offw+self.side-self.icon1_s ,self.offh+self.side+2))
         anotes = pygame.image.load('icons/notes.png')
