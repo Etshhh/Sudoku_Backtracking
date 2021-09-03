@@ -2,6 +2,7 @@ import pygame
 import numpy as np
 from time import sleep
 import sudoku_bt as bt
+import sudoku_ch
 from sudoku_bt import empty_cells, validator
 pygame.font.init()
 
@@ -25,19 +26,21 @@ class App:
     #     [0,5,8,0,0,0,0,6,0],
     #     [4,3,0,0,8,0,0,7,0]
     # ]
-    grid = [
-        [7,8,0,4,0,0,1,2,0],
-        [6,0,0,0,7,5,0,0,9],
-        [0,0,0,6,0,1,0,7,8],
-        [0,0,7,0,4,0,2,6,0],
-        [0,0,1,0,5,0,9,3,0],
-        [9,0,4,0,6,0,0,0,5],
-        [0,7,0,3,0,0,0,1,2],
-        [1,2,0,0,0,7,4,0,0],
-        [0,4,9,2,0,6,0,0,7]
-    ]
-    grid = np.array(grid)
+    # grid = [
+    #     [7,8,0,4,0,0,1,2,0],
+    #     [6,0,0,0,7,5,0,0,9],
+    #     [0,0,0,6,0,1,0,7,8],
+    #     [0,0,7,0,4,0,2,6,0],
+    #     [0,0,1,0,5,0,9,3,0],
+    #     [9,0,4,0,6,0,0,0,5],
+    #     [0,7,0,3,0,0,0,1,2],
+    #     [1,2,0,0,0,7,4,0,0],
+    #     [0,4,9,2,0,6,0,0,7]
+    # ]
+    # grid = np.array(grid)
     
+    grid = sudoku_ch.createagrid(1) # 0 -> 1, where 0 is easy and 1 is hard
+
     ogrid = grid.copy()
     
     rows = cols = 9
