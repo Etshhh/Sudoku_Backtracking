@@ -1,2 +1,2 @@
 # Sudoku_Backtracking
-Sudoku Bactracking with NumPy
+This repo presents a python implementation of the backtracking algorithm for sudoku solving implemented using NumPy for faster computation.
