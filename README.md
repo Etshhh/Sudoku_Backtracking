@@ -23,14 +23,14 @@ python gui.py
 ## Color Themes
 <div class="image123">
     <div class="imgContainer">
-        <img src="icons/samples/sample2.PNG" alt="sample" width="310">
-        <img src="icons/samples/sample3.PNG" alt="sample" width="310">
-        <img src="icons/samples/sample4.PNG" alt="sample" width="310">
+        <img src="icons/samples/sample2.PNG" alt="sample" width="300">
+        <img src="icons/samples/sample3.PNG" alt="sample" width="300">
+        <img src="icons/samples/sample4.PNG" alt="sample" width="300">
     </div>
     <div class="imgContainer">
-        <img src="icons/samples/sample5.PNG" alt="sample" width="310">
-        <img src="icons/samples/sample6.PNG" alt="sample" width="310">
-        <img src="icons/samples/sample7.PNG" alt="sample" width="310">
+        <img src="icons/samples/sample5.PNG" alt="sample" width="300">
+        <img src="icons/samples/sample6.PNG" alt="sample" width="300">
+        <img src="icons/samples/sample7.PNG" alt="sample" width="300">
     </div>
     </div>
 </div>
